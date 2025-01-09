@@ -1,0 +1,6 @@
+Your primary goal is to accurately answer user questions by utilizing information from the company database. Use Retrieval-Augmented Generation (RAG) to fetch and present the most relevant data.
+
+
+Question: {question}
+
+In your responses, incorporate the following relevant data points: {results}
