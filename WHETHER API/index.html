@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #74ebd5, #acb6e5);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .weather-container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 15px;
+            width: 90%;
+            max-width: 400px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .weather-container h1 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .input-container {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .input-container input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .input-container button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #3498db;
+            color: white;
+            font-size: 1em;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .input-container button:hover {
+            background-color: #2980b9;
+        }
+
+        .location {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .temperature {
+            font-size: 2em;
+            margin: 10px 0;
+        }
+
+        .weather-image {
+            margin: 15px 0;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .error {
+            color: #e74c3c;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="weather-container">
+        <h1>Weather App</h1>
+        <div class="input-container">
+            <input type="text" id="location-input" placeholder="Enter location" />
+            <button onclick="fetchWeather()">Get Weather</button>
+        </div>
+        <div class="location">Location: --</div>
+        <div class="temperature">Temperature: -- °C</div>
+        <div class="weather-image">
+            <img src="" alt="Location Image" id="location-image">
+        </div>
+        <div class="error" id="error"></div>
+    </div>
+
+    <script>
+        async function fetchWeather() {
+            const location = document.getElementById('location-input').value;
+
+            if (!location) {
+                document.getElementById('error').textContent = 'Please enter a location.';
+                return;
+            }
+            const apiUrl = `http://api.weatherapi.com/v1/current.json?key=afb66231f6f448e786651212252001&q=${location}&aqi=yes`;
+
+            const locationImageUrl = `https://source.unsplash.com/400x300/?${location}`;
+
+            try {
+                const response = await fetch(apiUrl);
+
+                if (!response.ok) {
+                    throw new Error("Unable to fetch weather data.");
+                }
+
+                const data = await response.json();
+
+                document.querySelector(".location").textContent = `Location: ${data.location.name}, ${data.location.region}, ${data.location.country}`;
+                document.querySelector(".temperature").textContent = `Temperature: ${data.current.temp_c} °C`;
+                document.getElementById("location-image").src = locationImageUrl;
+                document.getElementById("error").textContent = "";
+            } catch (error) {
+                document.getElementById("error").textContent = error.message;
+            }
+        }
+    </script>
+</body>
+</html>
