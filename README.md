@@ -51,8 +51,8 @@ This repository is licensed under the MIT License. Feel free to use the code and
 
 ## Connect with Me
 
-- **Email**: [my-email@example.com](mailto:manaschakrabortty34@gmail.com)
-- **LinkedIn**: [my-LinkedIn Profile](https://www.linkedin.com/in/manas-chakrabortty-75b192222/)
-- **Instagram**: --
+- **Email**:manaschakrabortty34@gmail.com
+- **LinkedIn**: https://www.linkedin.com/in/manas-chakrabortty-75b192222/
+
 
 Happy coding! 🚀
