@@ -45,9 +45,6 @@ Contributions are welcome! If you have suggestions, improvements, or new project
 - Create a new branch for your feature or bug fix.
 - Submit a pull request.
 
-## License
-
-This repository is licensed under the MIT License. Feel free to use the code and resources, but please give credit where it's due.
 
 ## Connect with Me
 
