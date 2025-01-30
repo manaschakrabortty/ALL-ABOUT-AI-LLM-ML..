@@ -36,7 +36,6 @@ This repository aims to:
 - Python 3.7+
 - Common libraries: NumPy, Pandas, Scikit-learn, TensorFlow, PyTorch, Hugging Face Transformers, etc.
 - 
-
 ## Contributions
 
 Contributions are welcome! If you have suggestions, improvements, or new project ideas, feel free to:
