@@ -126,8 +126,7 @@
                 document.querySelector(".temperature").textContent = `Temperature: ${data.current.temp_c} °C`;
                 document.getElementById("location-image").src = locationImageUrl;
                 document.getElementById("error").textContent = "";
-            } catch (error) {
-                document.getElementById("error").textContent = error.message;
+            } 
             }
         }
     </script>
