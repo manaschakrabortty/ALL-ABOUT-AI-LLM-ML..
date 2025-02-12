@@ -1,4 +1,4 @@
-# Python REST API Tutorial
+# Python REST API 
 ## "How to Build a Flask REST API form scratch" 
 ---
 
