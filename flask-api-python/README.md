@@ -12,3 +12,8 @@
 - 🔗 [Flask](https://flask.palletsprojects.com/en/3.0.x/)
 - 🔗 [Flask Restful](https://flask-restful.readthedocs.io/en/latest/)
 - 🔗 [Flask SQLAlchemy](https://flask-sqlalchemy.palletsprojects.com/en/3.1.x/)
+
+🚀 Follow Me:
+
+- [Twitter](https://x.com/stubbornmanas)
+- [LinkedIn](https://www.linkedin.com/in/manas-chakrabortty-75b192222/)
