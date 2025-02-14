@@ -1,4 +1,4 @@
-# AI, ML, and LLM Projects Repository
+# AI, ML, and LLM Projects Repository--
 
 Welcome to my GitHub repository! Here, I share my journey in the fascinating world of Artificial Intelligence (AI), Machine Learning (ML), and Large Language Models (LLMs). 
 This repository contains various projects, experiments, and implementations to showcase my learnings and contributions in these cutting-edge fields.
@@ -11,7 +11,7 @@ This repository contains various projects, experiments, and implementations to s
 - **Datasets**: Sample datasets used for projects.
 - **Documentation**: Detailed explanations, reports, and insights for each project.
 
-## Goals
+
 
 This repository aims to:
 
@@ -33,7 +33,7 @@ This repository aims to:
 
 ## Requirements
 
-- Python 3.7+
+- Python 
 - Common libraries: NumPy, Pandas, Scikit-learn, TensorFlow, PyTorch, Hugging Face Transformers, etc.
 
 ## Contributions
